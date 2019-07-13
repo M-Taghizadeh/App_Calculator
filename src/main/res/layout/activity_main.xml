@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#214EF3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_plus"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="Operator_button"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/btn_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="Operator_button"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dot"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="Operator_button"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/btn_divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_9"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="61dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="Operator_button"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_3"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_6"
+        app:layout_constraintEnd_toStartOf="@+id/btn_plus"
+        app:layout_constraintStart_toEndOf="@+id/btn_2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_0"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:onClick="Digit_button"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_dot"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:onClick="Digit_button"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_divide"
+        app:layout_constraintStart_toEndOf="@+id/btn_0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_7"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn_8"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_8"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn_9"
+        app:layout_constraintStart_toEndOf="@+id/btn_7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_2"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_3"
+        app:layout_constraintStart_toEndOf="@+id/btn_1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_6"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/btn_9"
+        app:layout_constraintEnd_toStartOf="@+id/btn_minus"
+        app:layout_constraintStart_toEndOf="@+id/btn_5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_5"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/btn_8"
+        app:layout_constraintEnd_toStartOf="@+id/btn_6"
+        app:layout_constraintStart_toEndOf="@+id/btn_4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_9"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dot"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mul"
+        app:layout_constraintStart_toEndOf="@+id/btn_8"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_4"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="Digit_button"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_7"
+        app:layout_constraintEnd_toStartOf="@+id/btn_5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_redu"
+        style="@android:style/Widget.DeviceDefault.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:onClick="redu"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clean"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_clean"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="clean"
+        android:text="Clean"
+        app:layout_constraintBottom_toTopOf="@+id/btn_2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_result"
+        app:layout_constraintStart_toEndOf="@+id/btn_redu"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_result"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="equal_button"
+        android:text="="
+        app:layout_constraintBottom_toTopOf="@+id/btn_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_clean"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/text_view_result_old"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/background_light"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/text_view_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#A3FFFFFF"
+        android:cursorVisible="true"
+        android:textSize="24sp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_redu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_result_old" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
